@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            height: 800vh;
+            width: 60vh;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        table {
+            margin: 0 auto 20px auto;
+        }
+        input, select, label {
+            margin: 5px 0;
+            display: block;
+        }
+        .checkbox-group, .radio-group {
+            margin: 10px 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th><img height="40" width="40" src="buss.png" alt="logo"></th>  
+                <th><h1>Welcome to Bus Booking System</h1></th>
+            </tr>
+        </table>
+
+        <form action="">
+            <label for="seat">Select Your Bus Seat</label>
+            <input type="text" id="seat" name="seat">
+
+            <div class="checkbox-group">
+                <label>Choose Bus Type:</label>
+                <input type="checkbox" id="ac" name="bustype" value="ac">
+                <label for="ac">AC</label>
+
+                <input type="checkbox" id="nonac" name="bustype" value="nonac">
+                <label for="nonac">Non-AC</label>
+            </div>
+
+            <div class="radio-group">
+                <label>Select Payment Method:</label>
+                <input type="radio" id="upi" name="payment" value="upi">
+                <label for="upi">UPI</label>
+
+                <input type="radio" id="atm" name="payment" value="atm">
+                <label for="atm">ATM</label>
+            </div>
+
+            <button type="submit">Book Seat</button>
+        </form>
+    </div>
+</body>
+</html>
