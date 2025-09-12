@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Cards</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 200px;
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 15px;
+    }
+
+    .btn {
+      padding: 8px 14px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .add {
+      background: #4CAF50;
+      color: white;
+    }
+
+    .order {
+      background: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="burger.jpeg" alt="Burger">
+      <h3>Burger</h3>
+      <h4>50rs</h4>
+      <div class="btn-group">
+        <button class="btn add">Add</button>
+        <button class="btn order">Order</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="iz.jpeg" alt="Pizza">
+      <h3>Pizza</h3>
+      <h4>60rs</h4>
+      <div class="btn-group">
+        <button class="btn add">Add</button>
+        <button class="btn order">Order</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="coke.jpeg" alt="Coke">
+      <h3>Coke</h3>
+      <h4>50 rs</h4>
+      <div class="btn-group">
+        <button class="btn add">Add</button>
+        <button class="btn order">Order</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
