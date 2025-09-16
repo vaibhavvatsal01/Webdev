@@ -8,11 +8,15 @@
 
     </style>
 </head>
-<body>
-    <div id="aa">
+<body id="aa">
+    <!-- <div id="aa">
 <button onclick="ab()">click</button>
 <p id="aaa"></p>
-    </div>
+    </div> -->
+
+    <button onclick="red()">red</button>
+    <button onclick="green()">green</button>
+    <button onclick="blue()">blue</button>
     <script>
 //         function abes(){
 //             document.write("python");
@@ -29,10 +33,18 @@
         
 //         abes();
 
-function ab(){
-    document.getElementById("aaa").innerHTML="hello";
+// function ab(){
+//     document.getElementById("aaa").innerHTML="hello";
+// }
+function red(){
+    document.getElementById("aa").style.backgroundColor="red";
 }
-
+function green(){
+    document.getElementById("aa").style.backgroundColor="green";
+}
+function blue(){
+    document.getElementById("aa").style.backgroundColor="blue";
+}
 
 
     </script>
