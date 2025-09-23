@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <style>
+        #cont{
+            height:60 px;
+            width: 60px;
+            border: 20px solid red;
+            margin-left: 40%;
+            
+        }
+    </style> 
+<style>
+    #child{
+        height: 400px;
+        width: 400px;
+        border: 2px solid rebeccapurple;
+    }
+    #child{
+        height: 400px;
+        width: 400px;
+        border: 2px solid rebeccapurple;
+    }
+    #child2{
+        height: 400px;
+        width: 400px;
+        border: 2px solid rebeccapurple;
+    }
+    #chlid2{
+        height: 400px;
+        width: 400px;
+        border: 2px solid rebeccapurple;
+    }
+</style>
+
+</head>
+<body >
+    
+   <!-- <div id="cont">
+     <div >
+
+        <img src="download.png" alt="logo" >
+    </div>
+    <div>
+       <center> <h1 id="aa">0</h1></center>
+        <button onclick="plus()">+</button>
+        <button onclick="minus()">-</button>
+
+    </div>
+   </div>
+    <script>
+        let count=0;
+        function plus(){
+            
+    count++;
+    document.getElementById("aa").innerText=count;
+    if(count>10){
+        document.write("max limit");
+    }
+
+}
+     function minus(){
+            
+    count--;
+    document.getElementById("aa").innerText=count;
+    if(count<0){
+        document.write("min limit");
+    }
+
+} -->
+<div id="parent">
+<div id="child"> <img id="child1"  src="flipcart.jpeg" alt=""></div>
+<div id="child"> <button onclick="hide()">hide</button></div>
+</div>
+<script>
+    function hide(){
+        document.getElementById("child1").style.display="none";
+
+    }
+</script>
+<div id="parent1">
+    <div id="child2"><img src="flipcart.jpeg" alt=""></div>
+    <div id="child2"><img src="download.png" alt=""></div>
+
+</div>
+
+        
+</body>
+</html>
