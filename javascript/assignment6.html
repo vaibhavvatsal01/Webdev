@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap; 
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            color: rebeccapurple;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>DS Students</h2>
+        <ul id="ds-students">
+            </ul>
+    </div>
+    
+    <div class="card">
+        <h2>IT Students</h2>
+        <ul id="it-students">
+            </ul>
+    </div>
+</div>
+
+<script>
+    const students = [
+        { name: "vaibhav", branch: "ds", roll: 204 },
+        { name: "parasar", branch: "it", roll: 205 },
+        { name: "ansh", branch: "it", roll: 210 },
+        { name: "hardik", branch: "it", roll: 208 },
+        { name: "anurag", branch: "ds", roll: 201 }
+    ];
+
+    const dsList = document.getElementById('ds-students');
+    const itList = document.getElementById('it-students');
+
+    
+    for (let i = 0; i < students.length; i++) {
+        const student = students[i];
+        const listItem = document.createElement('li');
+        listItem.textContent = `Name: ${student.name}, Roll: ${student.roll}`;
+
+        if (student.branch === 'ds') {
+            dsList.appendChild(listItem);
+        } else if (student.branch === 'it') {
+            itList.appendChild(listItem);
+        }
+    }
+</script>
+</body>
+</html>
