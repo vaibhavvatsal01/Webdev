@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<body>
+  <script>
+    function ac(dt,next){
+        setTimeout(()=>{
+    console.log("data",dt);
+    if(next){
+        next();
+    }
+        },2000);
+    }
+ac(1,()=>{
+    ac(2,()=>{
+        ac(3,()=>{
+            ac(4);
+        })
+    })
+})
+  </script>  
+</body>
+</html>
